@@ -1,0 +1,4 @@
+name = No Index
+description = Tell Search Engines not to Index this site
+package = Poetic
+core = 7.x
