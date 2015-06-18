@@ -1,0 +1,18 @@
+<?php
+/**
+ * Implements hook_requirements().
+ */
+function noindex_requirements($phase) {
+  $requirements = array();
+  $t = get_t();
+
+  if ($phase == 'runtime') {
+    $requirements ['noindex'] = array(
+      'title' => $t('No Index'),
+      'description' => $t('Do not go live with this turned on!!!'),
+      'value' => 'Enabled',
+      'severity' => REQUIREMENT_ERROR
+    );
+  }
+  return $requirements;
+}
