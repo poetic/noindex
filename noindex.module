@@ -1,0 +1,9 @@
+<?php
+$element = array(
+  '#tag' => 'meta', // The #tag is the html tag - <meta />
+  '#attributes' => array( // Set up an array of attributes inside the tag
+    'name' => 'robots', 
+    'content' => 'noindex',
+  ),
+);
+drupal_add_html_head($element, 'noindex');
